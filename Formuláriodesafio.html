@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+	<head>
+			<meta charset="utf-8">
+			<title>Cadastro html 5</title>	
+	</head>
+		<body>
+			<h1>Contato Profissional</h1>
+			<hr>
+			
+
+			<form name="recebedados" action="recebedados.php" method="post">
+				<fieldset>
+					<legend>Dados Pessoais</legend>
+					<label for="nomecompleto">Nome Completo:</label>
+					<input autofocus required placeholder="*Obrigatório" id="nomecompleto" type="text" name="nome">
+					<br>
+					<br>
+				
+					
+					
+					<label for="opfeminino">Gênero: Feminino</label>
+					<input id="opfeminino" type="radio" value="feminino" name="genero">
+					<label for="opmasculino">Masculino</label>
+					<input id="opmasculino" type="radio" value="masculino" name="genero">
+					<label for="opoutro">Outro</label>
+					<input id="opoutro" type="radio" value="outro" name="genero">
+					<label for="opprefironaoresponder">Prefiro não responder</label>
+					<input id="opprefironaoresponder" type="radio" value="prefironaoresponder" name="genero">
+					<br>
+					<br>
+					<label for="datadenascimento">Data de Nascimento:</label>
+					<input type="date" name="aniversario" id="datadenascimento">
+					<br><br>
+
+					<label for="insemail">Email:</label>	
+					<input required placeholder="Apenas email válido" type="email" name="inserçãodeemail" id="insemail">
+					<br><br>
+
+					<label for="pagina">URL site pessoal</label>
+					<input type="url" name="inserçao" id="pagina" placeholder="http://fulana.com">
+					<br><br>
+
+					<label for="rua">Endereço:</label>
+					<input required type="text" name="endereço" id="rua" placeholder="Avenida,Rua e/ou Logadouro">
+					<br><br>
+					<label for="numero">Número:</label>
+					<input required type="text" name="endereço" id="numero" placeholder="Número">
+					<label for="compl">Complemento:</label>
+					<input required type="text" name="endereço" id="compl" placeholder="Apto">
+					<br><br>
+					<label for="cidadeid">Selecione sua cidade:</label>
+					<select id="cidadeid" name="cidade">
+						<option value="alv">Alvorada</option>
+						<option value="can">Canoas</option>
+						<option value="est">Esteio</option>
+						<option value="grav">Gravataí</option>
+						<option value="nh">Novo Hamburgo</option>
+						<option value="pf">Passo Fundo</option>
+						<option value="pel">Pelotas</option>
+						<option value="poa">Porto Alegre</option>
+						<option value="sl">São Leopoldo</option>
+					</select> 
+					<br><br>
+					<label for="telid">Telefone:</label>
+					<input type="tel" name="fone" id="telid">
+					<br>
+					
+
+				</fieldset>
+				<br><br>
+
+
+				<fieldset>
+					<legend>Dados Profissioniais</legend>
+					<br>
+
+					
+					<label for="designid"> Áreas de atuação: Design</label>
+					<input type="checkbox" name="atuacao" id="designid" value="design">
+					<label for="frontendid">Desenvolvimento Front-end</label>
+					<input type="checkbox" name="atuacao" id="frontendid" value="front-end">
+					<label for="backendid">Desenvolvimento Back-end</label>
+					<input type="checkbox" name="atuacao" id="backendid" value="backend">
+					<label for="softid">Engenharia de Software</label>
+					<input type="checkbox" name="atuacao" id="softid" value="engenharia de software">
+					<label for="dadosid">Banco de Dados</label>
+					<input type="checkbox" name="atuacao" id="dadosid" value="bancodedados">
+					<label for="testid">Análise de Testes</label>
+					<input type="checkbox" name="atuacao" id="testid" value="analisedetestes">
+					<label for="negoid">Análise de Negócios</label>
+					<input type="checkbox" name="atuacao" id="negoid" value="analisedenegocios">
+					<label for="manuid">Manutenção</label>
+					<input type="checkbox" name="atuacao" id="manuid" value="manutenção">
+					<br><br>
+
+					<label for="formid">Formação:</label>
+					<input list="form" name="escol" id="formid">
+					<datalist id="form">
+						<option value="Ensino Fundamental">
+						<option value="Ensino Médio">
+						<option value="Ensino Superior">
+						<option value="Especialização">
+						<option value="Mestrado">
+						<option value="Doutorado">
+					</datalist>
+					<br><br>
+					<label for="textoid">Breve Histórico Profissional:</label>
+					<br>
+					<textarea id="textoid" name="tx" cols="50" rows="8">...breve texto...</textarea>
+					<br><br>
+					<label for="envarq">Curriculo Vitae:</label>
+					<br>
+					<input type="file" name="arquivo" id="envarq">
+					<br><br>
+					<label for="horasid">Disponibilidade de horas semanais:</label>
+					<input type="number" name="horasdisponiveis" id="horasid" min="10" max="40" step="10" value="0">
+					<br><br>
+				</fieldset>
+				<fieldset>
+					<legend>Agendamento de Entrevista</legend>
+					<label for="entrevistaid">Data:</label>
+					<input required type="date" name="entrevista" id="entrevistaid">
+					<br><br>
+					<label for="horarioid">Horário:</label>
+					<input required type="time" name="horarioesntrev" id="horarioid">
+					<br><br>
+
+				</fieldset>
+				<br>
+
+					<input type="submit" name="btn" value="Cadastrar">	
+				
+			</form>
+		</body>
+</html>		

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Formulário de Cadastro</title>	
+	</head>
+	<body>
+		<h1> Super Cine</h1>
+		<hr>
+		<h2>Formulário de Cadasro de Filme</h2>
+
+		<!--A tag "form" é um formulário-->
+		<form name="cadastrofilme" action="cadastro.php" method="get">
+			<!--Cria uma caixa visual-->
+			<fieldset>
+				<!--Define o nome da caixinha-->
+				<legend>Dados do Filme</legend>
+
+				<!-- Rótulo do campo titulofilme-->
+				<label>Título do Filme</label>
+				<!-- campo de texto para digitar o nome do filme-->
+				<input type="text" name="titulo" id="titulofilme">
+
+				<br>
+
+				<fieldset>
+					<legend>Categoria</legend>
+					<!--botao radio - permite escolher apenas uma opção -->
+					<input type="radio" name="categoria" value="drama" id="opdrama">
+					<label for="opdrama">Drama</label>
+
+					<input type="radio" name="categoria" value="suspense" id="opsuspense">
+					<label for="opsuspense">Suspense</label>
+					
+					<input type="radio" name="categoria" value="comedia" id="opcomedia">
+					<label for="opcomedia">Comédia</label>
+				</fieldset>
+
+				
+			</fieldset>
+			<!-- botão para enviar o formulário-->
+			<input type="submit" name="btn" value="Cadastrar">
+
+
+		</form>
+		
+	</body>
+</html>
